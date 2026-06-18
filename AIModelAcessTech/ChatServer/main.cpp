@@ -142,7 +142,7 @@ int main(int argc, char** argv) {
         else if (config.logLevel == "CRITICAL") logLevel = spdlog::level::critical;
         
         // 初始化日志组件
-        bite::Logger::initLogger("ChatServer", "stdout", logLevel);
+        model::Logger::initLogger("ChatServer", "stdout", logLevel);
         
         // 显示当前配置
         INFO("AIChatServer 启动配置:");
